@@ -4,7 +4,7 @@ from datetime import date
 class EmployeeCreate(BaseModel):
     employee_id: str
     full_name: str
-    email: EmailStr
+    email: str
     department: str
 
 class EmployeeResponse(EmployeeCreate):
