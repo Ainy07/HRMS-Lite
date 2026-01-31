@@ -4,7 +4,7 @@
 
 - **Live Frontend URL:** [https://hrms-lite-6lxp.vercel.app](https://hrms-lite-6lxp.vercel.app)  
 - **Live Backend API (Railway):** [hrms-lite-production-fa7e.up.railway.app/docs](https://hrms-lite-production-fa7e.up.railway.app/docs)  
-- **GitHub Repository:** [[Link to your repo](https://github.com/Ainy07/HRMS-Lite)]
+- **GitHub Repository:** [[Ainy07](https://github.com/Ainy07/HRMS-Lite)]
 
 ---
 
@@ -77,15 +77,6 @@ The admin can:
 
 ---
 
-## **Project Structure**
-
-HRMS-Lite/
-├─ frontend/ # React + Vite frontend (deployed on Vercel)
-├─ backend/ # FastAPI backend (deployed on Railway)
-├─ README.md
-
-
----
 
 ## **Steps to Run Locally**
 
@@ -103,21 +94,3 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 Open http://localhost:8000/docs for API documentation.
 
-Assumptions & Limitations
-Single admin user (no authentication implemented)
-
-No advanced HR features (payroll, leave management)
-
-Core functionality focuses on Employee & Attendance management
-
-Bonus Features (Optional)
-Filter attendance records by date
-
-Display total present days per employee
-
-Basic dashboard summary
-
-Notes
-The application is fully deployed and publicly accessible via the URLs above.
-
-Ensure backend is running for frontend to function correctly if running locally.
