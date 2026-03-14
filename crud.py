@@ -46,3 +46,4 @@ def add_attendance(emp_id: str, att):
 
 def get_attendance(emp_id):
     return [attendance_helper(a) for a in attendance_collection.find({"employee_id": emp_id})]
+ 
