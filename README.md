@@ -83,13 +83,11 @@ The admin can:
 ### Frontend
 
 ```bash
-cd frontend
 npm install
 npm run dev
 Open http://localhost:5173 in your browser.
 
 Backend
-cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 Open http://127.0.0:8000/docs for API documentation.
