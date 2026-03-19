@@ -25,7 +25,7 @@ export default function AttendanceChart({ records }) {
     .slice(-30)
     .map((r) => ({
       date: r.date.slice(5), // "MM-DD"
-      value: r.status === "Present" ? 1 : r.status === "Leave" ? 0.5 : 0,
+      value: 1,
       status: r.status,
     }));
 
@@ -44,10 +44,10 @@ export default function AttendanceChart({ records }) {
             tickLine={false}
             interval="preserveStartEnd"
           />
-          <YAxis hide domain={[0, 1]} />
+          <YAxis hide domain={[0, 1]} allowDecimals={false} />
           <Tooltip
             contentStyle={TOOLTIP_STYLE}
-            cursor={{ fill: "rgba(255,255,255,0.04)" }}
+            cursor={{ fill: "rgba(0,0,0,0.04)" }}
             formatter={(_, __, props) => [props.payload.status, "Status"]}
           />
           <Bar dataKey="value" radius={[3, 3, 0, 0]}>
